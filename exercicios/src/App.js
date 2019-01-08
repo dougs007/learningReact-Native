@@ -1,29 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
 
-import React, { Component } from 'react'
-import { View, Text, StyleSheet} from 'react-native'
 import Simples from './componentes/Simples'
+import ParImpar from './componentes/ParImpar'
+
 export default class App extends React.Component {
-    render() {
-        return (
-          <View style={styles.container}>
-              <Simples texto='Flexível!!' />
-          </View>
-        )
-    }
+	render() {
+		return (
+			<View style={styles.container}>
+				<Simples texto='Flexível!!!!' />
+				<ParImpar numero={150} />
+			</View>
+		)
+	}
 }
-    
-// Constantes de estilos.
+
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    }
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+	}
 })
