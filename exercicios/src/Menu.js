@@ -7,11 +7,17 @@ import Inverter, { MegaSena} from './componentes/Multi'
 import Contador from './componentes/Contador'
 import Plataformas from './componentes/Plataformas'
 import ValidarProps from './componentes/ValidarProps'
-import Evento from './componentes/Evento';
+import Evento from './componentes/Evento'
 import Avo from './componentes/ComunicacaoDireta'
 import TextoSincronizado from './componentes/ComunicacaoIndireta'
+import ListaFlex from './componentes/ListaFlex'
 
 export default createDrawerNavigator ({
+    ListaFlex: {
+        screen: ListaFlex,
+        // Define o Título do menu de navegação
+        navigationOptions: { title: 'Lista Flex' } 
+    },
     TextoSincronizado: {
         screen: TextoSincronizado,
         // Define o Título do menu de navegação
