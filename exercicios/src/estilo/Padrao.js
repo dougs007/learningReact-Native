@@ -15,5 +15,14 @@ export default StyleSheet.create ({
         color: '#000000',
         fontWeight: 'bold',
         paddingHorizontal: 5,
-    }
+    },
+    input: {
+        height: 70,
+        fontSize: 40,
+        borderColor: 'gray',
+        borderWidth: 1,
+    },
+    fonte40: {
+        fontSize: 40,
+    },
 })
