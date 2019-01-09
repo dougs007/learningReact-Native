@@ -9,5 +9,11 @@ export default StyleSheet.create ({
         borderColor: '#222',
         fontSize: 24,
         fontWeight: 'bold',
+    },
+    title: {
+        fontSize: 30,
+        color: '#000000',
+        fontWeight: 'bold',
+        paddingHorizontal: 5,
     }
 })
