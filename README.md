@@ -15,7 +15,7 @@ Para desenvolver para dispositivos móveis, foi utilizado o S.O. Linux Ubuntu e 
 
 ## Executar o app
 
-Para executar o app, basta entrar dentro da pasta com o projeto e executar o seguinte comando.
+Para executar o app, basta entrar <b>dentro da pasta com o projeto</b> e executar o seguinte comando.
 ```
   react-native run-android
 ```
