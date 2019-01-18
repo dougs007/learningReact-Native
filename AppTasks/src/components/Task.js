@@ -29,7 +29,7 @@ export default props => {
 
     return (
         <View style={ styles.container }>
-            <TouchableWithoutFeedback onPress={ () => props.ToggleTask(props.id) }>
+            <TouchableWithoutFeedback onPress={() => props.onToggleTask(props.id)}>
                 <View style={ styles.checkContainer }>{check}</View>
             </TouchableWithoutFeedback>
             <View>
@@ -37,7 +37,7 @@ export default props => {
                     { props.desc }
                 </Text>
                 <Text style={ styles.date }>
-                    { moment(props.estimateAt).locale('pt-br').format('ddd, D [de] MMMM') }
+                    { moment(props.estimateAt).locale('pt-br').format('ddd, D [de] MMMM [de] YYYY') }
                 </Text>
             </View>
         </View>
