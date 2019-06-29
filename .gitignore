@@ -1,2 +1,4 @@
 .idea/
 .vscode/
+
+tasks-backend/node_modules/
