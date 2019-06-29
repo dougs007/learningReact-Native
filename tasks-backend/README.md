@@ -1,4 +1,4 @@
-# Tasks-BackEnd
+# Tasks-BackEnd API
 
 Seja bem vindo, nesse diretório foi criado uma aplicação backend utilizando NodeJS.
 
