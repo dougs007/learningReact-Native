@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  db:
+    container_name: db-tasks
+    image: postgres:9.3
+    ports:
+        - 5439:5432
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: tasks
+
+  app:
+    image: douglas007/node-tasks:1.0
+    command: npm start
+    container_name: app-tasks
+    env_file:
+      - ./.env
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/var/www
+    depends_on:
+      - db
+    links:
+      - db

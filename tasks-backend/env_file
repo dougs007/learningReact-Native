@@ -1,0 +1,3 @@
+// Renomear para .env
+
+module.exports={authSecret:"98765123#%%%#"}
